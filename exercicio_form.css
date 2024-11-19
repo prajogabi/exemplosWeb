@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&display=swap');
+
+html{
+    font-size: 62,5%;
+
+    /*
+    10px - 62,5%
+    16px - 100%
+ */
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+   
+}
+
+
+form {
+     font-size: 0.8rem;
+    /* valor máximo de 300 px para o formulário, se a tela for menor o form não cria barra de rolagem*/
+      max-width: 20.0rem; /*equivalente a 200px*/
+      /*espaçamento externo ou espaçamento em torno dos elementos*/
+      /*espaçamento externo 10 px para top e bottom*/
+      /*espaçamento externo auto para right e left*/
+      /* O auto busca centralizar automaticamente o elemento dentro do seu container*/
+      margin: 1.0rem auto; /*equivalente a 10px*/
+      /*espaçamento interno*/
+      padding: 1.0rem 2.0rem;
+      background: #f4f7f8;
+      border-radius: 0.8rem; /*equivalente a 8px*/
+    }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+   /*rgba - função com definição das cores*/	
+   /*rgba(255,0,0,0.3); define a intensidade do vermelho de 0 a 255*/
+   /*rgba(0,255,0,0.3);}verde*/
+  /*rgba(0,0,255,0.3);}azul*/
+  /*opacidade de 0 a 1*/
+  background: rgba(255,255,255,0.1);
+  /*tira a borda*/
+  border: none;  
+  font-size: 1.6rem;
+  /*ajuste automaticamente da altura pelo browser*/
+  height: auto;
+  margin: 0;
+  /*Um contorno é uma linha desenhada ao redor dos elementos, fora das bordas, para fazer o elemento "se destacar".*/
+  /* outline: 0; */
+  padding: 1.0rem;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  
+  /* inset - muda a sombra de uma sombra externa (início) para uma sombra interna*/
+  /* 0px sombra horizontal, 1px sombra do lado direto 0 px sombra do lado esquerdo*/
+  box-shadow: 0 0.1rem 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 3.0rem;
+  font-size: 0.8rem;
+}
+    
+
+h1 {
+	/*espaçamento externo 0px top, 0px right 30px bottom 0 px left*/
+  margin: 0 0 3.0rem 0;
+  text-align: center;
+}
+
+select {
+    padding: 0.6rem;
+    height: 3.2rem;
+    border-radius: 2px;
+
+  }
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 0.4rem 0.8rem 0;
+}
+
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+     /* 0px sombra horizontal, -1px sombra do lado direto 0 px sombra do lado esquerdo*/
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }
+
+  fieldset {
+    /*espaçamento entre os grupos*/
+    margin-bottom: 30px;
+    border: none;
+  }
+
+    
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+
+  .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
